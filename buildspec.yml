@@ -11,6 +11,8 @@ phases:
     commands:
       - echo Create build...
       - npm run build
+      - echo Files on directory...
+      - ls
       # - echo "Create zip for build created..."
       # - zip -r application.zip .
   post_build:
