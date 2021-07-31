@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules",
+  "info": {
+    "name": "schedule"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "day": {
+      "type": "string"
+    },
+    "written_name": {
+      "type": "string"
+    },
+    "month": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    }
+  }
+}

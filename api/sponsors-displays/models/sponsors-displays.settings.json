@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsors_displays",
+  "info": {
+    "name": "sponsors-displays"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sponsor_name": {
+      "type": "string"
+    },
+    "sponsor_link": {
+      "type": "string"
+    },
+    "sponsor_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
