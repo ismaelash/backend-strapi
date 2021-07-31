@@ -34,8 +34,5 @@
     "node": "14.x.x",
     "npm": "^6.0.0"
   },
-  "license": "MIT",
-  "config": {
-    "unsafe-perm":true
-}
+  "license": "MIT"
 }
