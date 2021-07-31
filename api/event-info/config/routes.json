@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/event-info",
+      "handler": "event-info.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/event-info",
+      "handler": "event-info.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/event-info",
+      "handler": "event-info.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "singleType",
+  "collectionName": "event_infos",
+  "info": {
+    "name": "event-info",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_name": {
+      "type": "string"
+    },
+    "organizer_name": {
+      "type": "string"
+    },
+    "event_start_day": {
+      "type": "date"
+    },
+    "event_end_day": {
+      "type": "date"
+    },
+    "event_hour_start": {
+      "type": "string"
+    },
+    "event_hour_end": {
+      "type": "string"
+    },
+    "main_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "organizer_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "link_facebook": {
+      "type": "string"
+    },
+    "link_instagram": {
+      "type": "string"
+    },
+    "link_linkedin": {
+      "type": "string"
+    },
+    "text_title_1": {
+      "type": "string"
+    },
+    "payed_event": {
+      "type": "boolean"
+    },
+    "tickets_number": {
+      "type": "integer"
+    },
+    "organizer_description": {
+      "type": "richtext"
+    },
+    "text_1": {
+      "type": "richtext"
+    }
+  }
+}
